@@ -1,0 +1,12 @@
+C:\Users\sapeg\Downloads\Names.csproj\bin\Debug\names.txt
+C:\Users\sapeg\Downloads\Names.csproj\bin\Debug\Names.exe.config
+C:\Users\sapeg\Downloads\Names.csproj\bin\Debug\Names.exe
+C:\Users\sapeg\Downloads\Names.csproj\bin\Debug\Names.pdb
+C:\Users\sapeg\Downloads\Names.csproj\bin\Debug\ZedGraph.dll
+C:\Users\sapeg\Downloads\Names.csproj\bin\Debug\ZedGraph.xml
+C:\Users\sapeg\Downloads\Names.csproj\obj\Debug\Names.csproj.AssemblyReference.cache
+C:\Users\sapeg\Downloads\Names.csproj\obj\Debug\Names.csproj.SuggestedBindingRedirects.cache
+C:\Users\sapeg\Downloads\Names.csproj\obj\Debug\Names.csproj.CoreCompileInputs.cache
+C:\Users\sapeg\Downloads\Names.csproj\obj\Debug\Names.csproj.CopyComplete
+C:\Users\sapeg\Downloads\Names.csproj\obj\Debug\Names.exe
+C:\Users\sapeg\Downloads\Names.csproj\obj\Debug\Names.pdb
