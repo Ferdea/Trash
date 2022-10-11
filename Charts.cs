@@ -72,11 +72,11 @@ namespace Names
         {
             var random = new Random();
             var firstName = namesSet.ToArray()[random.Next(namesSet.Count)];
-            var firstBirthCount = GraphTask.GetData(names, firstName);
+            var firstBirthCount = Task.GetData(names, firstName);
             leftButton.Text = firstName;
             
             var secondName = namesSet.ToArray()[random.Next(namesSet.Count)];
-            var secondBirthCount = GraphTask.GetData(names, secondName);
+            var secondBirthCount = Task.GetData(names, secondName);
             rightButton.Text = secondName;
 
             label.Text = String.Format("Какое имя встречается чаще? {0} или {1}", firstName, secondName);
@@ -85,11 +85,18 @@ namespace Names
             void OnLeftButtonOnClick(object sender, EventArgs args)
             {
                 if (firstBirthCount < secondBirthCount)
-                    notification.Text = "Неправильно!";
+                {
+                    notification.Text =
+                        String.Format("Неправильно! Людей с именем {0} родилось {1}, с именем {2} - {3}", firstName,
+                            firstBirthCount, secondName, secondBirthCount);
+                    Console.Beep();
+                }
                 else
-                    notification.Text = "Правильно!";
+                    notification.Text =
+                        String.Format("Правильно! Людей с именем {0} родилось {1}, с именем {2} - {3}", firstName,
+                            firstBirthCount, secondName, secondBirthCount);
                 secondName = namesSet.ToArray()[random.Next(namesSet.Count)];
-                secondBirthCount = GraphTask.GetData(names, secondName);
+                secondBirthCount = Task.GetData(names, secondName);
                 rightButton.Text = secondName;
                 label.Text = String.Format("Какое имя встречается чаще? {0} или {1}", firstName, secondName);
             }
@@ -99,11 +106,18 @@ namespace Names
             void OnRightButtonOnClick(object sender, EventArgs args)
             {
                 if (firstBirthCount > secondBirthCount)
-                    notification.Text = "Неправильно!";
+                {
+                    notification.Text =
+                        String.Format("Неправильно! Людей с именем {0} родилось {1}, с именем {2} - {3}", firstName,
+                            firstBirthCount, secondName, secondBirthCount);
+                    Console.Beep();
+                }
                 else
-                    notification.Text = "Правильно!";
+                    notification.Text =
+                        String.Format("Правильно! Людей с именем {0} родилось {1}, с именем {2} - {3}", firstName,
+                            firstBirthCount, secondName, secondBirthCount);
                 firstName = namesSet.ToArray()[random.Next(namesSet.Count)];
-                firstBirthCount = GraphTask.GetData(names, firstName);
+                firstBirthCount = Task.GetData(names, firstName);
                 leftButton.Text = firstName;
                 label.Text = String.Format("Какое имя встречается чаще? {0} или {1}", firstName, secondName);
             }
